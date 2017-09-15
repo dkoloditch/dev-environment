@@ -2,16 +2,16 @@
 
 ## Setup (Docker)
 1. Install [Docker for Mac](https://store.docker.com/editions/community/docker-ce-desktop-mac)
-2. Clone this repository
-3. Navigate to the repo directory
+2. Clone this repository to `~/dev/code`
+3. Navigate to `~/dev/code/dev-environment`
 4. Run `docker-compose up -d`
+5. Enter the `devenv` container via `docker exec -it devenv bash`
 6. Bundle gems and install yarn dependencies:
-  - run `docker exec -it dev_env bash`
-  - navigate to the container repo directory (e.g. `/dev/my_repo`)
-  - run `bundle` and `yarn install` as you normally would
-  - start your server(s)
+  - navigate to the container repo directory via `cd /dev/code/my-repo`
+  - run `bundle`, `yarn install`, etc as you normally would for projects
+  - navigate to your repo(s) and start your server(s)
 
-#### Basic Commands:
+## Basic Docker Commands
 - `docker-compose up`: Create and start containers
 - `docker-compose stop`: Stop services
 - `docker-compose restart`: Restart services
