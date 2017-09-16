@@ -7,8 +7,8 @@
 4. Run `docker-compose up -d`
 5. Enter the `devenv` container via `docker exec -it devenv bash`
 6. Install repo dependencies:
-  - navigate to a repo directory via `cd /dev/code/my-repo`
-  - run `bundle`, `yarn install`, etc as you normally would for your project
+    - navigate to a repo directory via `cd /dev/code/my-repo`
+    - run `bundle`, `yarn install`, etc as you normally would for your project
 7. Start your server(s)
 
 ## Note
